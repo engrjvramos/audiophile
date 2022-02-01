@@ -10,9 +10,16 @@
 
 :root {
 	--color-primary: #d87d4a;
+	--color-secondary: #fbaf85;
 	--body-bg-color: #fafafa;
 	--header-bg-color: #191919;
+
+	--text-color-1: rgba(255, 255, 255, 0.5);
+	--text-color-2: rgba(255, 255, 255, 0.75);
+	--text-color-3: rgba(0, 0, 0, 0.4);
+
 	--white: #fff;
+	--black: #000;
 }
 
 html {
@@ -27,6 +34,25 @@ body {
 }
 
 a {
-	color: var(--white);
 	text-decoration: none;
+	color: inherit;
+}
+
+.btn-primary {
+	@include flexCenter;
+	width: 16rem;
+	height: 4.8rem;
+	background: var(--color-primary);
+	color: var(--white);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s;
+
+	&:hover {
+		background: var(--color-secondary);
+	}
 }
