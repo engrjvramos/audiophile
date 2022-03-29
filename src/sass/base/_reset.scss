@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #d87d4a;
+  --clr-primary-light: #fbaf85;
+
+  --clr-neutral-dark-100: #101010;
+  --clr-neutral-dark-200: #141414;
+  --clr-neutral-light-100: #fafafa;
+  --clr-neutral-light-200: #f1f1f1;
+
+  --clr-white: #fff;
+  --clr-black: #000;
 }
 
 html {
@@ -10,6 +25,12 @@ html {
 }
 
 body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
   min-height: 100vh;
-  display: flex;
+  background-color: var(--clr-neutral-light-100);
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
